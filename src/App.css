@@ -2,6 +2,20 @@
 	text-align: center;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.date{
+	background-color: rgb(56, 7, 88);
+	color: rgb(15, 150, 15);
+}
+.copyright {
+	background-color: rgb(56, 7, 88);
+	color: rgb(15, 150, 15);
+}
+
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
@@ -14,6 +28,7 @@
 }
 
 h2 {
+	width: 75%;
 	padding: 1%;
 	color: rgb(15, 150, 15);
 	font-weight: bold;
@@ -23,15 +38,15 @@ h2 {
 	border-radius: 10rem;
 }
 .img {
-  width: 92%;
-  margin: auto;
+  	width: 92%;
+  	margin: auto;
 }
 
 .explanation {
-  font-size: .9rem;
+  font-size: 1rem;
 	padding: 1%;
 	width: 90%;
-	margin: auto;
+	margin-top: 3%;
 	color: rgb(15, 150, 15);
 	font-weight: bold;
 	font-family: "Space Mono", monospace;

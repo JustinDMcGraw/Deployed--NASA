@@ -7,7 +7,7 @@ const POTD = () => {
 	useEffect(() => {
 		axios
 			.get(
-				"https://api.nasa.gov/planetary/apod?api_key=6X75xS4lgMq4h3alGcjWoErtUev8qXGeDCJqga05"
+				"https://api.nasa.gov/planetary/apod?api_key=6X75xS4lgMq4h3alGcjWoErtUev8qXGeDCJqga05&hd=True"
 			)
 			.then((res) => {
 				console.log(res.data);
@@ -22,9 +22,9 @@ const POTD = () => {
 		<div className="container">
 			<h2 className='title'>{photoData.title}</h2>
 			<p className='date'>{photoData.date}</p>
-			<img className='img' src={photoData.url} alt={photoData.title} />
+			<img className='img' src={photoData.url} alt={photoData.resource} />
 			<p className="explanation">{photoData.explanation}</p>
-			<p>{photoData.copyright}</p>
+			<p className="copyright">Copyright: {photoData.copyright}</p>
 		</div>
 	);
 };
